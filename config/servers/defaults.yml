@@ -1,0 +1,16 @@
+# servers/defaults.yml
+################################
+# This file defines our defaults
+################################
+
+name: "My fss testrun 2"
+key_name: fss-testrun
+secret_key_file: "~/.ssh/fss-testrun.pem"
+security_groups: fss-testrun
+instance_type: c1.medium
+image_id: ami-2f726546
+availability_zone: us-east-1c
+cloud:
+  provider: AWS
+  region: us-east-1
+  access_creds: "./secrets.yml"
